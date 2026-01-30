@@ -23,11 +23,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     EmployeeListComponent,
     CreateEmployeeComponent,
-    UpdateEmployeeComponent,
+    // UpdateEmployeeComponent REMOVED FROM HERE
     EmployeeDetailsComponent,
     SalaryCalculationComponent,
     AddSalaryComponent,
-    UpdateSalaryComponent,
+    // UpdateSalaryComponent REMOVED FROM HERE
     SalaryDetailsComponent,
     LoginComponent,
     AuthGuardComponent,
@@ -39,6 +39,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NgChartsModule,
     HttpClientModule,
     FormsModule,
+    // ADDED HERE INSTEAD:
+    UpdateEmployeeComponent,
+    UpdateSalaryComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

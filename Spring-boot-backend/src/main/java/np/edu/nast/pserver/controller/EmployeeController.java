@@ -26,7 +26,7 @@ import np.edu.nast.pserver.repository.SalaryRepository;
 import np.edu.nast.pserver.response.ResponseMessage;
 import np.edu.nast.pserver.service.impl.EmployeeService;
 
-// @CrossOrigin(origins="http://localhost:4200")
+ @CrossOrigin(origins="http://localhost:4200")
 // @CrossOrigin(origins="https://deploysmartpayroll.netlify.app")
 @RestController
 @RequestMapping("/api/employees")

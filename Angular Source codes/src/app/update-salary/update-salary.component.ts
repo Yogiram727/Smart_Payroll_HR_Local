@@ -3,10 +3,17 @@ import { Salary } from '../salary';
 import { SalaryService } from '../salary.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-update-salary',
+  standalone: true,
   templateUrl: './update-salary.component.html',
-  styleUrls: ['./update-salary.component.css']
+  styleUrls: ['./update-salary.component.css'],
+  imports:[FormsModule,CommonModule]
+
+  
 })
 export class UpdateSalaryComponent {
   id:number;

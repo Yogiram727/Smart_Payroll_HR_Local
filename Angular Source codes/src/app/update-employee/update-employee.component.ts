@@ -2,11 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 import { Employee } from '../employee';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-update-employee',
+  standalone: true,
   templateUrl: './update-employee.component.html',
-  styleUrls: ['./update-employee.component.css']
+  styleUrls: ['./update-employee.component.css'],
+  imports:[FormsModule,CommonModule]
+
 })
 export class UpdateEmployeeComponent implements OnInit {
   id: number;
