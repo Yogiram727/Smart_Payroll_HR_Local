@@ -1,0 +1,53 @@
+<div class="app-wrapper">
+  <nav class="navbar navbar-expand-sm custom-navbar shadow-sm">
+    <div class="container-fluid">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a routerLink="dashboard" routerLinkActive="active" class="nav-link"
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="employees" routerLinkActive="active" class="nav-link"
+            >Employee List</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="create-employee"
+            routerLinkActive="active"
+            class="nav-link"
+            >Add Employee</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="salaries" routerLinkActive="active" class="nav-link"
+            >View Salary</a
+          >
+        </li>
+        <li class="nav-item">
+          <a routerLink="add-salary" routerLinkActive="active" class="nav-link"
+            >Add Salary</a
+          >
+        </li>
+      </ul>
+      <button
+        (click)="logout()"
+        class="btn btn-warning fw-bold px-3 logout-button"
+      >
+        Logout
+      </button>
+    </div>
+  </nav>
+
+  <main class="container my-4 flex-grow-1">
+    <h1 class="text-center mt-4">{{ title }}</h1>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <span>© 2026 All Rights Reserved @Ram Nath</span>
+    </div>
+  </footer>
+</div>

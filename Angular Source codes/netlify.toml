@@ -1,0 +1,17 @@
+[build]
+  # Tell Netlify to enter your Angular folder first
+  base = "Angular Source codes"
+  
+  # The standard Angular build command
+  command = "npm run build"
+  
+  # The directory where Angular puts the finished files
+  # (Matches 'outputPath' in your angular.json)
+  publish = "dist/angular-frontend"
+
+[[redirects]]
+  # This section is CRITICAL for Angular. 
+  # It prevents 404 errors when you refresh the page.
+  from = "/*"
+  to = "/index.html"
+  status = 200
